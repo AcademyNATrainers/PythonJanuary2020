@@ -6,6 +6,8 @@ class Dog:
     def speak(self):
         print ("Woof")
 
+    def __str__(self):
+        return "I'm a dog named " + self.name
 
 class Cat:
     def __init__(self, name = 'Unnamed'):
@@ -16,6 +18,7 @@ class Cat:
 
 
 class Conure:
+
     def __init__(self, name = 'Unnamed'):
         self.name = name
 
@@ -33,4 +36,6 @@ def all_talk(pets):
 
 all_talk(animals)
 
+print(animals[0])
+print(animals[1])
 
